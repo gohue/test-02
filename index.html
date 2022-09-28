@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><h1>Bölsche-Button</h1></a>
+        </div>
+        <div class="sections none-upercase">
+            <a href="#HOME">Home</a>
+            <a href="#IMG">Bilder</a>
+            <a href="#CONTACT">Kontakt</a>
+        </div>
+    </nav>
+    <div class="home" id="HOME">
+        <div class="content">
+            <h1>Herzlich Wilkommen</h1>
+            <a href="#">Jetzt Starten</a>
+        </div>
+    </div>
+    <div class="img" id="IMG">
+        <div class="text">
+            <h1>Bilder</h1>
+        </div>
+        <div class="img-container">
+            <div class="img-only"><img src="https://source.unsplash.com/random/500x400" alt="connection failed...">
+                <p class="p1">Test</p></div>
+            <div class="img-only"><img src="https://source.unsplash.com/random/500x400" alt="connection failed...">
+                <p class="p1">Test</p></div>
+            <div class="img-only"><img src="https://source.unsplash.com/random/500x400" alt="connection failed...">
+                <p class="p2">Test</p></div>
+            <div class="img-only"><img src="https://source.unsplash.com/random/500x400" alt="connection failed...">
+                <p class="p2">Test</p></div>
+        </div>
+    </div>
+    <div class="contact" id="CONTACT">
+        <div class="com-forms">
+        <div class="forms-text">
+            <h1>Kontakt</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus recusandae dolor quae suscipit repellendus nostrum nisi!</p>
+        </div>
+        <div class="forms">
+            <form action="">
+                <label>
+                    <input type="text" name="name" placeholder="Name">
+                </label>
+                <input type="email" name="_replyto" placeholder="Email">
+                <label>
+                    <input type="text" name="message" placeholder="Nachricht">
+                </label>
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="logo fonts none">
+            <a href="#"><h1>Bölsche-Button</h1></a>
+        </div>
+        <div class="sections fonts none-upercase">
+            <a class="algn1" href="https://www.instagram.com/?theme=dark"><i class="fa-brands fa-instagram"></i>Instagram </a>
+            <a class="algn2" href="https://www.wilhelm-boelsche-schule.de">WBS-Website</a>
+        </div>
+    </footer>
+</body>
+<script>
+    /* IMG Right click disabled */
+    document.addEventListener('contextmenu', (e)=>{
+        if(e.target.nodeName === 'IMG'){
+            e.preventDefault();
+        }
+    })
+    /* Full screen IMG */
+   /* var elem = document.getElementById("IMG-FS");
+        function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { 
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { 
+            elem.msRequestFullscreen();
+        }
+    }*/
+    /* Full screen IMG 
+    $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        $(this).remove();
+    }).appendTo('body');
+});*/
+</script>
+</html>
